@@ -57,13 +57,13 @@ public class Team {
 	 */
 	public List<Individual> getActiveMembers() {
 
-		List<Individual> individualList;
+		List<Individual> individualList = new ArrayList<>();
 		List<Individual> activeIndividualList = new ArrayList<>();
 
 		individualList = this.getMembers();
-		System.out.println(individualList.size());
 		for (Individual e : individualList) {
-			if (e.isActive().compareTo(true) == 0)
+			boolean active = e.isActive();
+			if (active)
 				activeIndividualList.add(e);
 		}
 

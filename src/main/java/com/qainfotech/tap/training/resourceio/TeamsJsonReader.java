@@ -27,9 +27,12 @@ public class TeamsJsonReader {
 	 */
 	public List<Individual> getListOfIndividuals() {
 
+		List<Individual> individualList = new ArrayList<>();
 		try {
-			List<Individual> individualList = new ArrayList<>();
-			JSONObject jsonFile = (JSONObject) (new JSONParser()).parse(new FileReader("src/main/resources/db.json"));
+			
+			JSONObject jsonFile = (JSONObject) (new JSONParser()).parse(new FileReader("src/main/resources/db.json"));		
+			
+			
 			JSONArray individualArray = new JSONArray();
 			individualArray = (JSONArray) jsonFile.get("individuals");
 			Map<String, Object> individualMap = new HashMap<>();
@@ -44,12 +47,16 @@ public class TeamsJsonReader {
 				individualList.add(new Individual(individualMap));
 
 			}
-			return individualList;
+			
+			
+			//System.err.println(individualList);
+			
 
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		return null;
+		return individualList;
+		
 	}
 
 	/**

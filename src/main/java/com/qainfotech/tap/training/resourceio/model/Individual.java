@@ -18,8 +18,11 @@ public class Individual {
     this.id     = (Integer)individualMap.get("id");
     this.active = (Boolean)individualMap.get("active");
     
+  
     
     }
+    
+    
     
     /**
      * get the name of individual

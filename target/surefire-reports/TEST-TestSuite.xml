@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="TestSuite" time="0.122" errors="0" skipped="0">
+<testsuite tests="22" failures="0" name="TestSuite" time="0.253" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -25,13 +25,13 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/qainfotech/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2344010276939302533.tmp"/>
+    <property name="classworlds.conf" value="/home/qainfotech/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf667871590075038211.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.4.0-81-generic"/>
+    <property name="os.version" value="4.4.0-83-generic"/>
     <property name="user.home" value="/home/qainfotech"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -60,16 +60,26 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active" time="0.072"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active" time="0.139"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive" time="0.026"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getIndividualById_should_return_Individual_object_matching_id" time="0.002"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id" time="0.002"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getIndividualByName_should_return_Individual_object_matching_name" time="0.002"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name" time="0.001"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects" time="0.003"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects" time="0.002"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getListOfIndividuals_should_return_array_list_of_all_individual_objects" time="0.004"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsYamlReaderTest" name="getListOfTeams_should_return_a_list_if_Team_object_from_db_json" time="0.037"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active" time="0.011"/>
   <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive" time="0.005"/>
   <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getIndividualById_should_return_Individual_object_matching_id" time="0.001"/>
-  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id" time="0.002"/>
-  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getIndividualByName_should_return_Individual_object_matching_name" time="0"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id" time="0"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getIndividualByName_should_return_Individual_object_matching_name" time="0.001"/>
   <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name" time="0.001"/>
-  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects" time="0.012"/>
-  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects" time="0.001"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects" time="0"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects" time="0"/>
   <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfIndividuals_should_return_array_list_of_all_individual_objects" time="0.001"/>
-  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfTeams_should_return_a_list_if_Team_object_from_db_json" time="0.019"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest" name="getListOfTeams_should_return_a_list_if_Team_object_from_db_json" time="0.006"/>
   <testcase classname="com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest" name="addOptionShouldMethodShouldAppendPropertiesFileWithNewProperty" time="0.008"/>
-  <testcase classname="com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest" name="getOptionValueMethodShouldReturnOptionValuesFromPropertiesFile" time="0"/>
+  <testcase classname="com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest" name="getOptionValueMethodShouldReturnOptionValuesFromPropertiesFile" time="0.001"/>
 </testsuite>

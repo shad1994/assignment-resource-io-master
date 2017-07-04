@@ -1,5 +1,6 @@
 /home/qainfotech/Desktop/assignment-resource-io-master/src/main/java/com/qainfotech/tap/training/resourceio/PropertiesOptionsIO.java
 /home/qainfotech/Desktop/assignment-resource-io-master/src/main/java/com/qainfotech/tap/training/resourceio/model/Individual.java
+/home/qainfotech/Desktop/assignment-resource-io-master/src/main/java/com/qainfotech/tap/training/resourceio/TeamsYamlReader.java
 /home/qainfotech/Desktop/assignment-resource-io-master/src/main/java/com/qainfotech/tap/training/resourceio/exceptions/ObjectNotFoundException.java
 /home/qainfotech/Desktop/assignment-resource-io-master/src/main/java/com/qainfotech/tap/training/resourceio/model/Team.java
 /home/qainfotech/Desktop/assignment-resource-io-master/src/main/java/com/qainfotech/tap/training/resourceio/TeamsJsonReader.java
